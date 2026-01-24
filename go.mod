@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.3 // indirect
 	golang.org/x/net v0.21.0 // indirect
