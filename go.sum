@@ -4,5 +4,12 @@ github.com/hexiosec/email-parse v0.0.0-20260122111417-1f0b40343fee h1:2UIR/HqKkO
 github.com/hexiosec/email-parse v0.0.0-20260122111417-1f0b40343fee/go.mod h1:TsolrXCW1lhGQgm/JelE4eqwanvlwNNeBzH50pn60IU=
 github.com/markkurossi/tabulate v0.0.0-20251126123558-a08056f6160f h1:u5MRsdjmedlD5iDJzIzPICOhdD2hs9rQKixfuZf6jqY=
 github.com/markkurossi/tabulate v0.0.0-20251126123558-a08056f6160f/go.mod h1:Jol1zHueCHE+CSGXfTFoSGftCpxVkFZSkAQkZP2LFrU=
+github.com/richardlehane/mscfb v1.0.4 h1:WULscsljNPConisD5hR0+OyZjwK46Pfyr6mPu5ZawpM=
+github.com/richardlehane/mscfb v1.0.4/go.mod h1:YzVpcZg9czvAuhk9T+a3avCpcFPMUWm7gK3DypaEsUk=
+github.com/richardlehane/msoleps v1.0.1/go.mod h1:BWev5JBpU9Ko2WAgmZEuiz4/u3ZYTKbjLycmwiWUfWg=
+github.com/richardlehane/msoleps v1.0.3 h1:aznSZzrwYRl3rLKRT3gUk9am7T/mLNSnJINvN0AQoVM=
+github.com/richardlehane/msoleps v1.0.3/go.mod h1:BWev5JBpU9Ko2WAgmZEuiz4/u3ZYTKbjLycmwiWUfWg=
+golang.org/x/net v0.21.0 h1:AQyQV4dYCvJ7vGmJyKki9+PBdyvhkSd8EIx/qb0AYv4=
+golang.org/x/net v0.21.0/go.mod h1:bIjVDfnllIU7BJ2DNgfnXvpSvtn8VRwhlsaeUTyUS44=
 golang.org/x/text v0.31.0 h1:aC8ghyu4JhP8VojJ2lEHBnochRno1sgL6nEi9WGFGMM=
 golang.org/x/text v0.31.0/go.mod h1:tKRAlv61yKIjGGHX/4tP1LTbc13YSec1pxVEWXzfoeM=

@@ -11,6 +11,11 @@ import (
 	"github.com/markkurossi/tabulate"
 )
 
+const (
+	OutlookMsgMime = "application/vnd.ms-outlook"
+	EMLMime        = "message/rfc822"
+)
+
 // FileExists checks if a file exists at the given path.
 func FileExists(filePath string) bool {
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {

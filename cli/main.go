@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 
+	"github.com/MeanTimeCyber/email-dump/dumper"
 	"github.com/MeanTimeCyber/email-dump/input"
 )
 
@@ -38,4 +39,11 @@ func main() {
 
 	fmt.Printf("\nFile details:\n")
 	details.PrettyPrint()
+
+	if details.MimeType == input.OutlookMsgMime {
+		fmt.Printf("\nDetected Outlook MSG file.\n")
+		dumper.DumpMsg(filePath)
+	}
+
+	fmt.Println("Fin.")
 }
