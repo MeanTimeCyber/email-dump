@@ -7,6 +7,7 @@ import (
 	"os"
 	"path"
 
+	"github.com/dustin/go-humanize"
 	"github.com/gabriel-vasile/mimetype"
 	"github.com/markkurossi/tabulate"
 )
@@ -26,7 +27,7 @@ func FileExists(filePath string) bool {
 }
 
 type FileDetails struct {
-	Size      int64
+	Size      string
 	Name      string
 	SHA256    string
 	MimeType  string
@@ -43,7 +44,7 @@ func GetFileDetails(filePath string) (*FileDetails, error) {
 		return nil, err
 	}
 
-	details.Size = stats.Size()
+	details.Size = humanize.Bytes(uint64(stats.Size()))
 	details.Name = stats.Name()
 	details.Extension = path.Ext(stats.Name())
 
@@ -102,5 +103,4 @@ func (fd FileDetails) PrettyPrint() {
 func GetFileMimeType(filePath string) (string, error) {
 	mtype, err := mimetype.DetectFile(filePath)
 	return mtype.String(), err
-
 }
