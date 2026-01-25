@@ -42,7 +42,21 @@ func main() {
 
 	if details.MimeType == input.OutlookMsgMime {
 		fmt.Printf("\nDetected Outlook MSG file.\n")
-		dumper.DumpMsg(filePath)
+		err := dumper.DumpMsg(filePath)
+
+		if err != nil {
+			fmt.Printf("Error dumping MSG file: %s\n", err.Error())
+		}
+
+	} else if details.MimeType == input.EMLMime {
+		fmt.Printf("\nDetected EML file.\n")
+		err := dumper.DumpEML(filePath)
+
+		if err != nil {
+			fmt.Printf("Error dumping EML file: %s\n", err.Error())
+		}
+	} else {
+		fmt.Printf("\nUnsupported file type: %s\n", details.MimeType)
 	}
 
 	fmt.Println("Fin.")
